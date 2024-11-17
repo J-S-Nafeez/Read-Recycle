@@ -1,0 +1,401 @@
+/*
+.ride-container {
+    max-width: 600px;
+    margin-left: 90px;
+    margin-top: 60px;
+    
+    padding: 20px;
+    background-color: #d67979;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ride-form label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .ride-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .submit-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .ride-posts {
+    margin-top: 2000px;
+    position: absolute;
+    top: 200px;
+    
+    
+  }
+  
+  .ride-post {
+    background-color: #1a995a;
+    padding: 10px;
+    margin-left: 800px;
+    width: 200px;
+    margin-top: 10px; 
+    border-radius: 10px;
+    position:absolute;
+    top:'2000px'; 
+   margin-left:900px;
+    
+  }
+
+
+
+
+
+
+
+
+
+  
+  .delete-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .delete-button:hover {
+    background-color: #ff3333;
+  }
+  
+
+
+  .availableRides
+  {
+    background-color: red;
+  }
+
+  */
+
+
+
+
+
+
+
+
+
+
+
+  /* .ride-container {
+    max-width: 600px;
+    margin-left: 90px;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #d67979;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.ride-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.ride-form input, .ride-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.submit-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.button-group button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button-group button.active {
+    background-color: #005500;
+}
+
+.ride-posts {
+    position: absolute;
+    top: 80px;
+    //left: 750px;
+    width: 350px;
+}
+
+.ride-post {
+    background-color: #1a995a;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: white;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.delete-button, .interested-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.delete-button:hover, .interested-button:hover {
+    background-color: #ff3333;
+}
+
+.payment-method {
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.payment-method h5 {
+    color: #4CAF50;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   .ride-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .ride-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .ride-form input, .ride-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #218838;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+  }
+  
+  .button-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-group button.active {
+    background-color: #155d27;
+  }
+  
+  .button-group button:hover {
+    background-color: #218838;
+  }
+  
+  .ride-posts {
+    margin-top: 40px;
+  }
+  
+  .ride-post {
+    background-color: #4CAF50;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    color: white;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .ride-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ride-post h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .ride-post p {
+    margin: 5px 0;
+  }
+  
+  .delete-button, .interested-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover, .interested-button:hover {
+    background-color: #e60000;
+  }
+  
+  .payment-method {
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-method h5 {
+    color: #28a745;
+  }
+  
+  .payment-method p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .ride-post button:active {
+    transform: scale(0.98);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
