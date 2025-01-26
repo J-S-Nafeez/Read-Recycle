@@ -820,7 +820,7 @@ const Body = () => {
   };
 
   return (
-    <div>
+    <div style={{backgroundColor:'#E8F5E9',marginTop:'-40px'}}>
       {/* Search Input Field */}
       <div className="search-container">
         <input

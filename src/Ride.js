@@ -1136,7 +1136,9 @@ function Ride() {
     setSelectedRide(null); // Reset selected ride
   };
 
+
   return (
+    <div style={{backgroundColor:'#E8F5E9', marginTop:'-60px'}}>
     <div className="ride-container">
       <h2>Available Rides</h2>
       <form onSubmit={handleSubmit} className="ride-form">
@@ -1287,6 +1289,7 @@ function Ride() {
           </div>
         )}
       </div>
+    </div>
     </div>
   );
 }

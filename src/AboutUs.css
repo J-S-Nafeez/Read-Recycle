@@ -1,38 +1,50 @@
-/* .about-container {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Apply white background color to the entire page */
+.about-us-container {
+  background-color: #FFFFFF; /* White background */
+  padding: 20px;
+  margin: 0; /* Remove any margin that could cause extra space */
+  overflow: hidden; /* Ensure no overflow causing extra lines */
+}
+
+/* Remove unwanted extra line or space */
+.about-us-container svg {
+  display: block;
+  margin: 0; /* Ensure no margin is applied to SVG */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Reduce padding and adjust the content for tablets */
+  .about-us-container {
+    padding: 10px;
   }
-  
-  .about-container h2 {
-    color: #4CAF50; 
-    text-align: center;
+
+  svg {
+    width: 100%;
+    height: auto; /* Make the SVG scale with screen size */
   }
-  
-  .about-container p, .about-container ul {
-    color: #555;
-    line-height: 1.6;
+
+  text {
+    font-size: 14px; /* Reduce font size on smaller screens */
   }
-  
-  .about-container ul {
-    list-style-type: square;
-    padding-left: 20px;
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for mobile screens */
+  .about-us-container {
+    padding: 5px;
   }
-  
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
+
+  text {
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+
   .about-button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+    width: 100%; /* Full width button on small screens */
   }
-  .about-button:hover {
-    background-color: #45a049;
-  } */
+}

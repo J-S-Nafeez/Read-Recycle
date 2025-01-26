@@ -97,6 +97,8 @@ import AboutUs from './AboutUs';
 import LostFound from './LostFound';
 import Ride from './Ride';
 import Fotter from './Fotter';  // Import the Footer component
+import Login from './Login' ;// Import the login component
+
 
 const App = () => {
   // State to hold the search term
@@ -112,6 +114,7 @@ const App = () => {
           <Route path="lostfound" element={<LostFound />} />
           <Route path='ride' element={<Ride />} />
           <Route path='body' element={<Body searchTerm={searchTerm} />} />
+          <Route path="login" element={<Login></Login>}></Route>
         </Routes>
         <Fotter /> {/* Place Footer component outside Routes */}
       </BrowserRouter>

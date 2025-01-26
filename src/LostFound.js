@@ -182,7 +182,8 @@ function LostFound() {
   const filteredItems = filter ? items.filter(item => item.type === filter) : items;
 
   return (
-    <div className="lost-found-container">
+    <div style={{backgroundColor:'#E8F5E9',marginTop:'-40px'}}>
+    <div className="lost-found-container" style={{backgroundColor:'#E8F5E9'}}>
       <h2>Lost & Found</h2>
       <form onSubmit={handleSubmit} className="lost-found-form">
         <label>
@@ -260,6 +261,7 @@ function LostFound() {
           <p>No items to display</p>
         )}
       </div>
+    </div>
     </div>
   );
 }
