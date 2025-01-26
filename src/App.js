@@ -95,9 +95,9 @@ import Body from './Body';
 import Home from './Home';
 import AboutUs from './AboutUs';
 import LostFound from './LostFound';
-import Ride from './Ride';
+import Login from './Login';  
+import Ride from './Ride';   // Import the Ride component  
 import Fotter from './Fotter';  // Import the Footer component
-import Login from './Login' ;// Import the login component
 
 
 const App = () => {
