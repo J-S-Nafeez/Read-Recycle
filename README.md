@@ -12,7 +12,7 @@ Backend: Node.js, Express 🌐
 Styling: CSS 🎨
 Setup:
 Clone the repository:
-git clone https://github.com/Vasu7389/Read-and-Recycle.git
+git clone https://github.com/J-S-Nafeez/Read-and-Recycle.git
 Install dependencies:
 npm install
 Run the app:
