@@ -1,5 +1,3 @@
-# Creating the formatted README.md content as a text string
-readme_content_formatted = """
 # 📚 **Read and Recycle** ♻️
 
 **Read and Recycle** is a marketplace platform designed for university students to buy, sell, or trade books, study materials, gadgets, and more. It also serves as a community-driven platform for lost and found items and offers ride-sharing options for students. 🚗
