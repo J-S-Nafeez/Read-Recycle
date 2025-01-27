@@ -1,5 +1,12 @@
 # 📚 **Read and Recycle** ♻️
 
+
+## Live Demo
+
+You can check out the live demo of the project here: [Read-Recycle](https://read-recycle.netlify.app/)
+
+
+
 **Read and Recycle** is a marketplace platform designed for university students to buy, sell, or trade books, study materials, gadgets, and more. It also serves as a community-driven platform for lost and found items and offers ride-sharing options for students. 🚗
 
 ## Features:
