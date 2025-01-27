@@ -209,7 +209,7 @@
 import React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
-import download from './download.png';
+// import download from './download.png';
 
 const Header = ({ setSearchTerm }) => {
   return (
