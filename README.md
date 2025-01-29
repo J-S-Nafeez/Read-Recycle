@@ -2,7 +2,7 @@
 🎥 Live Demo:
 🌐 Task Noter Demo
 
-Read and Recycle is a marketplace platform designed for university students to buy, sell, or trade books, study materials, gadgets, and more. It also serves as a community-driven platform for lost and found items and offers ride-sharing options for students. 🚗
+Read and Recycle is a marketplace platform designed for university students to buy, sell, or trade books, study materials, gadgets, and other essentials. It also serves as a community-driven platform for lost and found items and offers ride-sharing options for students. 🚗
 
 🔑 Features:
 Marketplace: Buy, sell, or exchange books, gadgets, and study materials 📖💻
@@ -18,12 +18,11 @@ Clone the repository:
 git clone https://github.com/J-S-Nafeez/Read-and-Recycle.git
 Navigate into the project directory:
 cd Read-and-Recycle
-Install dependencies: Run the following command to install all necessary dependencies:
+Install dependencies:
 npm install
-Start the project: Once the installation is complete, you can start the project using:
+Start the project:
 npm start
 This will launch the React development server, and the app will be available at http://localhost:3000.
 
 📜 License:
 This project is licensed under the ISC License - see the LICENSE file for details.
-
