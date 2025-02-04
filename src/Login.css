@@ -1,31 +1,34 @@
    /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #dbf1dd83;
     margin: 0;
     padding: 0;
   }
   
   .container {
+    margin-top: 70px;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     height: 100vh;
+    /* border-radius: 50px; */
   }
   
   .login-box {
     width: 400px;
     padding: 30px;
-    background-color: #fff;
+    background: linear-gradient(135deg, rgb(68, 165, 152), rgb(45, 110, 98));
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 20px;
+    border: 2px solid rgb(43, 40, 40);
     text-align: center;
   }
   
   h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #333;
+    color: #2b2727;
   }
   
   .toggle-buttons {
@@ -40,6 +43,7 @@ body {
     color: #333;
     font-size: 16px;
     border-radius: 5px;
+    border: 1px solid rgb(31, 29, 29);
     cursor: pointer;
     margin: 0 10px;
     transition: background-color 0.3s ease;
@@ -55,7 +59,7 @@ body {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
-    border: 1px solid #ddd;
+    border: 1px solid #221e1e;
     border-radius: 5px;
     font-size: 16px;
   }
@@ -87,7 +91,7 @@ body {
   }
   
   /* Mobile Responsiveness */
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) {
     .login-box {
       width: 90%;
       padding: 20px;
@@ -99,5 +103,74 @@ body {
       width: 45%;
       font-size: 14px;
     }
-  }
+  } */
   
+
+
+
+
+
+
+
+
+
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+  .login-box {
+    width: 90%; /* Make the login box take up more width on smaller screens */
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  h2 {
+    font-size: 20px; /* Adjust header size for smaller screens */
+    margin-bottom: 15px;
+  }
+
+  .toggle-buttons button {
+    width: 80px; /* Smaller buttons */
+    padding: 8px;
+    font-size: 14px; /* Smaller font size */
+    margin: 0 5px;
+  }
+
+  input,
+  select {
+    padding: 10px; /* Slightly reduce input padding */
+    font-size: 14px; /* Smaller font size */
+  }
+
+  button[type="submit"] {
+    padding: 10px; /* Reduce padding for smaller screens */
+    font-size: 14px; /* Smaller font size */
+  }
+}
+
+/* Responsive Design for very small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .login-box {
+    width: 100%; /* Full width for mobile devices */
+    padding: 15px; /* Further reduce padding */
+  }
+
+  h2 {
+    font-size: 18px; /* Adjust font size for very small screens */
+  }
+
+  .toggle-buttons button {
+    width: 70px; /* Even smaller buttons */
+    padding: 7px;
+    font-size: 12px;
+  }
+
+  input,
+  select {
+    padding: 8px; /* Further reduce padding */
+    font-size: 12px;
+  }
+
+  button[type="submit"] {
+    padding: 8px; /* Reduce padding further */
+    font-size: 12px; /* Smaller font size */
+  }
+} 

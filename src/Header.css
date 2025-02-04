@@ -9,32 +9,44 @@ header {
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%; /* Ensure the body takes up the full height */
+  height: 100%;
+  font-family: Arial, sans-serif;
 }
 
 /* Header container with flexbox */
 .header-container {
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); */
+  border-bottom: 3px solid rgb(129, 128, 128) ;
   height: 80px;
   color: #2f2f2f; /* Light black text color */
   background-color: #99b0d3; /* Light blue background color */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for the header */
   padding: 0 20px; /* Horizontal padding */
-  position: relative; /* To position the hamburger menu */
+  position: fixed; /* Ensure header stays fixed at the top */
+  top: 0; /* Position at the top of the page */
+  left: 0; /* Ensure it's aligned to the left */
+  width: 100%; /* Ensure it takes up the full width */
+  z-index: 100; /* Make sure it stays above other content */
+  box-sizing: border-box;
+}
+
+/* Logo and title styling */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2f2f2f;
 }
 
 /* Style for the menu */
 .header-menu {
-  margin-right: 0;
   display: flex;
-  gap: 60px; /* Adjust space between menu items */
+  gap: 40px; /* Adjust space between menu items */
   list-style: none;
   font-weight: bold;
-  font-size: 24px; /* Adjusted font size */
+  font-size: 20px;
 }
 
 .header-menu a {
@@ -42,66 +54,88 @@ body, html {
   color: #2f2f2f; /* Light black text color for menu items */
 }
 
-/* Adjustments for mobile screens */
+/* Hide the menu items on small screens by default */
+.header-menu.mobile-hide {
+  display: none;
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+  display: none; /* Hidden by default */
+  cursor: pointer;
+  font-size: 28px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #2f2f2f;
+  z-index: 10; /* Ensure it's above other content */
+}
+
+/* Responsive Design for mobile */
 @media (max-width: 768px) {
   .header-container {
-      flex-direction: column; /* Stack header items vertically */
-      height: auto;
-      padding: 10px;
+    flex-direction: row; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the left */
+    height: auto;
+    padding: 10px;
+  }
+
+  /* Show hamburger menu on small screens */
+  .hamburger-icon {
+    display: block; /* Visible on small screens */
+  }
+
+  /* Header menu - show it below header when hamburger icon is clicked */
+  .header-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #99b0d3; /* Dark background for the mobile menu */
+    position: absolute;
+    top: -30px; /* Positioned below header */
+    left: 0;
+    padding: 10px 0;
+    transition: top 0.3s ease-in-out;
+    box-sizing: border-box;
+    z-index: 5; /* Keep menu behind hamburger icon */
+  }
+
+  .header-menu a {
+    color: rgb(32, 30, 30); /* Make the text white */
+    padding:0px;
+    display: block;
+    width: 100%;
+    text-align: left; /* Align text to the left for better visibility */
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Optional border */
+    font-size: 18px;
+  }
+
+  /* Toggle the display of the menu when hamburger icon is clicked */
+  .header-menu.open {
+    display: flex; /* Show menu when open */
+  }
+
+  /* Optional styling for links when hovered */
+  .header-menu a:hover {
+    background-color: #99b0d3;
+  }
+}
+
+/* Extra adjustments for very small screens (like iPhone SE) */
+@media (max-width: 375px) {
+  .header-container {
+    padding: 10px;
+  }
+
+  .header-menu a {
+    font-size: 16px; /* Slightly smaller font for smaller screens */
+    padding: 0px;
   }
 
   .hamburger-icon {
-      display: block; /* Show hamburger on mobile */
-      position: absolute;
-      top: 15px;
-      right: 20px;
-  }
-
-  .header-menu {
-      flex-direction: column;
-      align-items: center;
-      display: none; /* Hide the menu by default */
-      width: 100%;
-  }
-
-  .header-menu.open {
-      display: block; /* Show the menu when it's open */
-  }
-
-  .header-menu a {
-      font-size: 18px; /* Adjusted font size for mobile screens */
-      padding: 10px 0;
-      width: 100%;
-      text-align: center;
-      border-top: 1px solid #eee;
-  }
-}
-
-/* Adjustments for very small screens like iPhone XR */
-@media (max-width: 414px) {
-  .header-container {
-      height: auto; /* Ensure the height is flexible */
-      padding: 10px;
-  }
-
-  .header-menu {
-      font-size: 18px; /* Reduce font size */
-      gap: 40px; /* Decrease gap between menu items */
-  }
-
-  .header-menu a {
-      font-size: 16px; /* Further reduce font size on smaller devices */
-      padding: 8px 0;
-  }
-}
-
-/* Further adjustments for very small screens */
-@media (max-width: 480px) {
-  .header-container {
-      padding: 5px;
-  }
-
-  .header-menu a {
-      font-size: 14px; /* Even smaller font size for very small screens */
+    font-size: 26px; /* Smaller hamburger icon for smaller screens */
   }
 }

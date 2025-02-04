@@ -71,3 +71,22 @@ body {
     }
   }
   
+
+  @media (max-width: 768px) {
+    .footer-content h3 {
+        font-size: 24px;
+    }
+    
+    .footer-content p {
+        font-size: 14px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links li {
+        margin: 8px 0;
+    }
+}

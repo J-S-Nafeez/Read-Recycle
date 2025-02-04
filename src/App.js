@@ -21,9 +21,9 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path="about" element={<AboutUs />} />
+          <Route path='body' element={<Body searchTerm={searchTerm} />} />
           <Route path="lostfound" element={<LostFound />} />
           <Route path='ride' element={<Ride />} />
-          <Route path='body' element={<Body searchTerm={searchTerm} />} />
           <Route path="login" element={<Login></Login>}></Route>
         </Routes>
         <Fotter /> {/* Place Footer component outside Routes */}
