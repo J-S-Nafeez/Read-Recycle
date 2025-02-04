@@ -48,5 +48,3 @@ npm install
 ```bash
 npm start
 ```
-- In the **frontend** folder:
-```bash
