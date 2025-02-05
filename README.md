@@ -2,7 +2,7 @@
 
 **Read and Recycle** is a full-stack web application designed as a sustainable university marketplace, enabling students to buy, sell, and trade books, study materials, gadgets, and essentials. It also includes a Lost & Found section and a Ride-Sharing feature, enhancing campus connectivity. 🚗
 
-You can check out the live demo of the app here: [🌐 Read and Recycle Demo](https://read-recycle.netlify.app/)
+You can check out the live demo of the app here: [🌐 Read and Recycle Demo](https://read-recycle.onrender.com)
 ### **👆 Click Here for Live Demo 🌐:**:
 
 ### 🔑 **Features**:
