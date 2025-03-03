@@ -1,4 +1,5 @@
 import React from 'react';
+import './Home.css';
 const Home = () => {
   return (
     <div style={{ backgroundColor: "#E8F5E9", marginTop: "80px" }}>

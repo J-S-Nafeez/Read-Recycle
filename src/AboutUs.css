@@ -15,7 +15,7 @@
   display: block;
   margin: 0 auto; /* Center SVG */
   max-width: 100%; /* Ensure SVG is fully responsive */
-  height: auto;
+  height: 1000px;
 }
 
 /* Button Styling */
@@ -73,7 +73,9 @@
 @media (max-width: 480px) {
   /* Further adjustments for mobile screens */
   .about-us-container {
-    padding: 5px;
+    padding: 0px;
+    height: 2000px;
+    margin-top: 210px;
   }
 
   svg {
@@ -82,12 +84,12 @@
   }
 
   text {
-    font-size: 12px; /* Smaller font size for mobile */
+    font-size: 10px; /* Smaller font size for mobile */
   }
 
   .about-button {
     width: 100%; /* Full width button on small screens */
     padding: 12px;
-    font-size: 14px; /* Adjust button font size */
+    font-size: 10px; /* Adjust button font size */
   }
 }
