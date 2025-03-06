@@ -66,17 +66,14 @@ const Home = () => {
         <text x="400" y="130" fontFamily="Arial, sans-serif" fontSize="48" fontWeight="bold" fill="#1B5E20" textAnchor="middle">
           Read & Recycle
         </text>
-
-        {/* Subtitle */}
-        <text x="400" y="180" fontFamily="Arial, sans-serif" fontSize="24" fill="#2E7D32" textAnchor="middle">
-          Buy • Sell • Exchange
+        <text x="400" y="180" fontFamily="Arial, sans-serif" fontSize="28" fontWeight="bold" fill="#1B5E20" textAnchor="middle">
+         Buy Sell Exchange 
+        </text>
+        <text x="400" y="230" fontFamily="Arial, sans-serif" fontSize="28" fontWeight="bold" fill="#FFA500" textAnchor="middle">
+         Lovely Professional University 
         </text>
 
-        {/* Tagline */}
-        <text x="400" y="220" fontFamily="Arial, sans-serif" fontSize="24" fill="#FF8C00" fontStyle="italic" textAnchor="middle">
-          Lovely Professional University
-        </text>
-
+       
       </svg>
     </div>
   );

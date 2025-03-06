@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import Body from './Body';
 import Home from './Home';
-import AboutUs from './AboutUs';
 import LostFound from './LostFound';
 import Login from './Login';  
 import Ride from './Ride';   // Import the Ride component  
@@ -20,7 +19,6 @@ const App = () => {
         <Header setSearchTerm={setSearchTerm} />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path="about" element={<AboutUs />} />
           <Route path='body' element={<Body searchTerm={searchTerm} />} />
           <Route path="lostfound" element={<LostFound />} />
           <Route path='ride' element={<Ride />} />

@@ -14,7 +14,6 @@ const Header = ({ setSearchTerm }) => {
           <li><Link to="/body">Buy & Sell</Link></li>
           <li><Link to='/lostfound'>Lost & Found</Link></li>
           <li><Link to="/ride">Ride</Link></li>
-          <li><Link to="/about">About Us</Link></li>
           <li><Link to="/login">LogIn</Link></li>
         </ul>
       </header>
